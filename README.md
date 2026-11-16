@@ -6,11 +6,33 @@ Yogyakarta, Indonesia · [Portfolio](https://ythchandraap.github.io) · [LinkedI
 
 I build digital products across the stack, from backend services and APIs to responsive web interfaces. I have 3+ years of experience working on fintech, healthcare, and operational products.
 
-## What I work with
+## Stack
 
 - **Backend:** Go, Node.js, NestJS
 - **Frontend:** TypeScript, React, Next.js
-- **Data:** PostgreSQL, Redis, MySQL
+
+## Data & APIs
+
+- **Databases:** PostgreSQL, MySQL
+- **Cache:** Redis
+- **Product work:** API integrations and operational reporting
+
+### How data moves
+
+*Illustrative technology map across projects; each project has its own architecture.*
+
+```mermaid
+flowchart LR
+  ui["Web apps<br/>React · Next.js · TypeScript"]
+  api["APIs & services<br/>Go · Node.js · NestJS"]
+  sql[("Relational data<br/>PostgreSQL · MySQL")]
+  cache[("Cache<br/>Redis")]
+  reports["Operational reports"]
+  ui --> api
+  api --> sql
+  api --> cache
+  sql --> reports
+```
 
 ## Selected work
 
